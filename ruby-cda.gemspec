@@ -1,6 +1,5 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
   s.name        = 'ruby-cda'
@@ -12,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = 'niquola@gmail.com'
   s.files       = `git ls-files lib`.split($/)
   s.homepage    = 'https://github.com/niquola/ruby-cda'
-
+  s.require_paths = ['lib']
   s.add_dependency 'activesupport', '5.0.0.1'
   s.add_dependency 'nokogiri',      '~> 1.7.1'
   s.add_dependency 'virtus',        '~> 1.0'
