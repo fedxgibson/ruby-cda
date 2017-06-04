@@ -3,7 +3,7 @@ lib = File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = 'ruby-cda'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.licenses    = ['MIT']
   s.summary     = "HL7 CDA Documents"
   s.description = "Parse & generation of HL7 cda documents"
